@@ -6,9 +6,17 @@
 body{
     background-color: beige;
 }
-.img{
-    width: 100vw;
-    height: 100vh;
+
+.img {
+    text-align: center; 
+}
+
+.img img {
+    width: 80%; 
+    height: auto; 
+    margin: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 header {
     display: flex;
@@ -68,4 +76,29 @@ header ul li {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Eliminar los puntos de la lista desordenada */
+    margin: 0; /* Eliminar el margen de la lista desordenada */
+    padding: 0; /* Eliminar el padding de la lista desordenada */
+    display: flex; /* Convertir la lista desordenada en un flexbox */
+    justify-content: center; /* Centrar los elementos de la lista desordenada */
+}
+
+nav li {
+    margin-right: 20px; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+nav a:hover {
+    color: #666; 
 }
