@@ -3,100 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastelería Delicias</title>
-    
+    <title>Pastelería Delicias - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #666;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-}
-
-    </style>
     <header>
         <h1>Pastelería Delicias</h1>
+        <img src="logo.png" alt="Logo de Pastelería Delicias">
     </header>
-    <nav>
-        <ul>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="nosotros">
-            <h2>Nosotros</h2>
-            <p>Somos una pastelería familiar con años de experiencia en la elaboración de deliciosos pasteles y tartas.</p>
+        <section class="hero">
+            <h2>Bienvenidos a Pastelería Delicias</h2>
+            <p>Disfruta de nuestros deliciosos pasteles y tartas, hechos con amor y dedicación.</p>
+            <button>Ver nuestros productos</button>
         </section>
-        <section id="productos">
-            <h2>Productos</h2>
+        <section class="features">
+            <h2>Nuestros productos</h2>
             <ul>
-                <li>Tartas de cumpleaños</li>
-                <li>Pasteles de bodas</li>
-                <li>Tortas de chocolate</li>
+                <li>
+                    <img src="tarta_cumpleanos.jpg" alt="Tarta de cumpleaños">
+                    <h3>Tartas de cumpleaños</h3>
+                    <p>Personalizadas para tu especial día.</p>
+                </li>
+                <li>
+                    <img src="pastel_boda.jpg" alt="Pastel de boda">
+                    <h3>Pasteles de bodas</h3>
+                    <p>Un toque de elegancia para tu gran día.</p>
+                </li>
+                <li>
+                    <img src="torta_chocolate.jpg" alt="Torta de chocolate">
+                    <h3>Tortas de chocolate</h3>
+                    <p>Un placer para los amantes del chocolate.</p>
+                </li>
             </ul>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Dirección: Calle Principal 123, Ciudad</p>
-            <p>Teléfono: 555-1234</p>
-            <p>Email: [pasteleriadelicias@email.com](mailto:pasteleriadelicias@email.com)</p>
         </section>
     </main>
     <footer>
