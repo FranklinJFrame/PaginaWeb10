@@ -3,102 +3,124 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: beige;
-}
-
-.img {
-    text-align: center; 
-}
-
-.img img {
-    width: 80%; 
-    height: auto; 
-    margin: 20px; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF5E6;
+    color: #333;
+    line-height: 1.6;
 }
 header {
+    background-color: #FF9999;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFDDDD;
-    padding: 10px 20px;
-    width: 100%;
 }
-.header li {
-    list-style: none;
-    font-size: 28px;
-    margin: 0px 15px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
 }
-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav ul {
     display: flex;
-    gap: 15px;
+    list-style: none;
 }
-
-header ul li {
-    display: inline-block;
-    margin: 0 15px;
-    color: rgb(25, 19, 19);
+nav ul li {
+    margin-left: 30px;
 }
-
-@media (max-width: 768px) {
-    header ul li a{
-    color: #1c1212;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
+nav ul li a:hover {
+    color: #FFD700;
+}
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('pasteleria.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+.btn {
+    display: inline-block;
+    background-color: #FF9999;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #FF7777;
 }
 .contenedor {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    gap: 40px; 
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 .caja {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-basis: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s ease;
 }
-
+.caja:hover {
+    transform: translateY(-10px);
+}
 .caja img {
-    max-width: 100%;
-    height: auto;
+    width: 60px;
+    height: 60px;
     margin-bottom: 20px;
 }
-
-nav {
+.caja h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FF9999;
+}
+.caja p {
+    font-size: 16px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
+    padding: 20px 0;
 }
 
-nav ul {
-    list-style: none; /* Eliminar los puntos de la lista desordenada */
-    margin: 0; /* Eliminar el margen de la lista desordenada */
-    padding: 0; /* Eliminar el padding de la lista desordenada */
-    display: flex; /* Convertir la lista desordenada en un flexbox */
-    justify-content: center; /* Centrar los elementos de la lista desordenada */
-}
-
-nav li {
-    margin-right: 20px; 
-}
-
-nav a {
-    text-decoration: none; 
-    color: #333; 
-}
-
-nav a:hover {
-    color: #666; 
-}
