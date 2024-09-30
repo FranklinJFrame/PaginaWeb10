@@ -52,7 +52,7 @@
             color: #FFD700;
         }
         .hero {
-            background-image: url('servicios-pasteleria.jpg');
+            background-image: url('/api/placeholder/1200/300?text=Nuestros+Servicios');
             background-size: cover;
             background-position: center;
             height: 300px;
@@ -93,10 +93,10 @@
         .service-card:hover {
             transform: translateY(-5px);
         }
-        .service-image {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
         .service-content {
             padding: 20px;
@@ -134,7 +134,6 @@
             <div class="logo">REPOSTERIA DELICIOSA</div>
             <ul>
                 <li><a href="PaginaHtml.html">Home</a></li>
-                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
             </ul>
         </nav>
@@ -146,7 +145,9 @@
 
     <div class="services-container">
         <div class="service-card">
-            <div class="service-image" style="background-image: url('pasteles-personalizados.jpg');"></div>
+            <div class="service-image">
+                <img src="imagenes/Pasteles personalizados.jpg" alt="Pasteles Personalizados" title="Pasteles Personalizados">
+            </div>
             <div class="service-content">
                 <h2>Pasteles Personalizados</h2>
                 <p>Creamos pasteles únicos y personalizados para todo tipo de ocasiones especiales. Desde bodas hasta cumpleaños, nuestros pasteles son obras de arte comestibles.</p>
@@ -155,16 +156,20 @@
         </div>
         
         <div class="service-card">
-            <div class="service-image" style="background-image: url('catering-eventos.jpg');"></div>
+            <div class="service-image">
+                <img src="imagenes/Buffet.jpeg" alt="Catering para Eventos" title="Catering para Eventos">
+            </div>
             <div class="service-content">
-                <h2>Catering para Eventos</h2>
+                <h2>Buffet para Eventos</h2>
                 <p>Ofrecemos servicios de catering dulce para todo tipo de eventos. Nuestras mesas de postres son el centro de atención en cualquier celebración.</p>
                 <a href="#" class="btn">Consultar Opciones</a>
             </div>
         </div>
         
         <div class="service-card">
-            <div class="service-image" style="background-image: url('clases-reposteria.jpg');"></div>
+            <div class="service-image">
+                <img src="imagenes/Clases de pasteleria.jpg" alt="Clases de Repostería" title="Clases de Repostería">
+            </div>
             <div class="service-content">
                 <h2>Clases de Repostería</h2>
                 <p>Aprende los secretos de la repostería con nuestros chefs expertos. Ofrecemos clases para todos los niveles, desde principiantes hasta avanzados.</p>
@@ -173,7 +178,9 @@
         </div>
         
         <div class="service-card">
-            <div class="service-image" style="background-image: url('entrega-domicilio.jpg');"></div>
+            <div class="service-image">
+                <img src="imagenes/Entrega a domicilio.jpeg" alt="Entrega a Domicilio" title="Entrega a Domicilio">
+            </div>
             <div class="service-content">
                 <h2>Entrega a Domicilio</h2>
                 <p>Disfruta de nuestros deliciosos postres en la comodidad de tu hogar. Ofrecemos servicio de entrega rápido y seguro.</p>
