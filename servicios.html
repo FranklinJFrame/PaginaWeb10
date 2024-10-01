@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - REPOSTERIA DELICIOSA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF5E6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #FF9999;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            background-image: url('/api/placeholder/1200/300?text=Nuestros+Servicios');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .hero h1 {
+            font-size: 48px;
+            position: relative;
+            z-index: 1;
+        }
+        .services-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .service-content {
+            padding: 20px;
+        }
+        .service-content h2 {
+            color: #FF9999;
+            margin-bottom: 10px;
+        }
+        .service-content p {
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #FF9999;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #FF7777;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">REPOSTERIA DELICIOSA</div>
+            <ul>
+                <li><a href="PaginaHtml.html">Home</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Nuestros Servicios</h1>
+    </section>
+
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-image">
+                <img src="imagenes/Pasteles personalizados.jpg" alt="Pasteles Personalizados" title="Pasteles Personalizados">
+            </div>
+            <div class="service-content">
+                <h2>Pasteles Personalizados</h2>
+                <p>Creamos pasteles únicos y personalizados para todo tipo de ocasiones especiales. Desde bodas hasta cumpleaños, nuestros pasteles son obras de arte comestibles.</p>
+                <a href="#" class="btn">Más Información</a>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-image">
+                <img src="imagenes/Buffet.jpeg" alt="Catering para Eventos" title="Catering para Eventos">
+            </div>
+            <div class="service-content">
+                <h2>Buffet para Eventos</h2>
+                <p>Ofrecemos servicios de catering dulce para todo tipo de eventos. Nuestras mesas de postres son el centro de atención en cualquier celebración.</p>
+                <a href="#" class="btn">Consultar Opciones</a>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-image">
+                <img src="imagenes/Clases de pasteleria.jpg" alt="Clases de Repostería" title="Clases de Repostería">
+            </div>
+            <div class="service-content">
+                <h2>Clases de Repostería</h2>
+                <p>Aprende los secretos de la repostería con nuestros chefs expertos. Ofrecemos clases para todos los niveles, desde principiantes hasta avanzados.</p>
+                <a href="#" class="btn">Ver Horarios</a>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-image">
+                <img src="imagenes/Entrega a domicilio.jpeg" alt="Entrega a Domicilio" title="Entrega a Domicilio">
+            </div>
+            <div class="service-content">
+                <h2>Entrega a Domicilio</h2>
+                <p>Disfruta de nuestros deliciosos postres en la comodidad de tu hogar. Ofrecemos servicio de entrega rápido y seguro.</p>
+                <a href="#" class="btn">Hacer Pedido</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 REPOSTERIA DELICIOSA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
