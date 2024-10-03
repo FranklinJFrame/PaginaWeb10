@@ -63,7 +63,15 @@ nav ul li a:hover {
 .hero-content {
     position: relative;
     z-index: 1;
-}
+   
+        background-image: url('port.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        padding: 50px;
+        color: white; 
+        text-align: center; 
+    }
+
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
